@@ -1,6 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `portfolio`
+    title: 'portfolio',
+    metaTags: [
+      {
+        name: 'description',
+        content: 'Description'
+      },
+      {
+        name: 'keywords',
+        content: 'keyword1, keyword2'
+      }
+    ]
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-typescript`]
+  plugins: ['gatsby-plugin-react-helmet']
 };
