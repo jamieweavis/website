@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'portfolio',
+    title: 'Jamie Weavis - JavaScript Developer - Portfolio',
+    siteUrl: 'https://jamieweavis.com/',
     metaTags: [
       {
         name: 'description',
@@ -10,7 +11,9 @@ module.exports = {
         name: 'keywords',
         content: 'keyword1, keyword2'
       }
-    ]
+    ],
+    fullName: 'Jamie Weavis',
+    jobTitle: 'JavaScript Developer'
   },
   plugins: ['gatsby-plugin-react-helmet']
 };
