@@ -11,9 +11,7 @@ module.exports = {
         name: 'keywords',
         content: 'keyword1, keyword2'
       }
-    ],
-    fullName: 'Jamie Weavis',
-    jobTitle: 'JavaScript Developer'
+    ]
   },
   plugins: ['gatsby-plugin-react-helmet']
 };
