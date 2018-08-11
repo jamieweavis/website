@@ -35,7 +35,7 @@ const StyledCanvas = styled.canvas`
 const Header = () => (
   <StyledHeader>
     <h1>Jamie Weavis</h1>
-    <h2>JavaScript Developer</h2>
+    <h2>Software Developer</h2>
     <StyledCanvas />
   </StyledHeader>
 );

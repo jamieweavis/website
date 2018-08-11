@@ -3,24 +3,38 @@ import React from 'react';
 import Layout from '../components/layout';
 import Region from '../components/region';
 import Container from '../components/container';
+import Avatar from '../components/avatar';
+
+const AboutRegion = Region.extend`
+  h2,
+  p {
+    text-align: left;
+  }
+`;
+
+const FlexContainer = Container.extend`
+  display: flex;
+`;
 
 const IndexPage = () => (
   <Layout>
-    <Region left>
-      <Container>
-        <aside>
-          <img src="" alt="" />
-        </aside>
-
-        <h2>About Me</h2>
-        <p>
-          My name is Jamie, I'm a Web Developer from Northampton in the United
-          Kingdom - I'm currently working as a Front End Developer for
-          Propeller. Interests of mine include programming, open source, graphic
-          design, PC gaming, mountain biking and electronic music.
-        </p>
-      </Container>
-    </Region>
+    <AboutRegion>
+      <FlexContainer>
+        <Avatar />
+        <div>
+          <h2>About Me</h2>
+          <p>
+            My name is Jamie, I&apos;m a Software Developer from Northampton in
+            the United Kingdom - I&apos;m currently working as a Lead JavaScript
+            Developer for Smart Recruit.
+          </p>
+          <p>
+            Interests of mine include programming, open source software, graphic
+            design, gaming and electronic music.
+          </p>
+        </div>
+      </FlexContainer>
+    </AboutRegion>
     <Region>
       <Container>
         <h2>Work Experience</h2>

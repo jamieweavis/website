@@ -19,7 +19,7 @@ export default injectGlobal`
   }
 
   h1 {
-    font-family: ${fonts.serif};
+    font-family: ${fonts.display};
     font-size: 7rem;
     margin-bottom: 1rem;
   }
@@ -28,14 +28,19 @@ export default injectGlobal`
     font-size: 3rem
     font-weight: bold;
     margin-bottom: 5rem;
+    position: relative;
   }
 
   p {
     font-size: 1.8rem;
-    margin-bottom: 5rem;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    margin-bottom: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  ::selection {
+    background-color: ${colors.gradient.middle};
+    color: ${colors.white};
+    opacity: 1;
   }
 
 `;

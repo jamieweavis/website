@@ -1,9 +1,9 @@
 const primaryFont = 'Prompt';
-const secondaryFont = 'Lobster';
+const displayFont = 'Lobster';
 
 export const fonts = {
   sansSerif: `${primaryFont}, Avenir, Helvetica, Arial, sans-serif`,
-  serif: `${secondaryFont}, serif`
+  display: `${displayFont}, Avenir, Helvetica, Arial, sans-serif`
 };
 
 export const colors = {
