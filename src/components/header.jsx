@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { colors } from '../styles/variables.css';
+import { colors, sizes } from '../styles/variables.css';
+import { media } from '../styles/mixins.css';
 
 const StyledHeader = styled.header`
   background-color: ${colors.gradient.start};
@@ -22,6 +24,30 @@ const StyledHeader = styled.header`
     color: ${colors.black};
     margin-bottom: 0;
   }
+
+  ${media(
+    sizes.small,
+    `
+      h1 {
+        font-size: 6rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    `
+  )};
+
+  ${media(
+    sizes.xsmall,
+    `
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    `
+  )};
 `;
 
 const StyledCanvas = styled.canvas`
@@ -32,12 +58,15 @@ const StyledCanvas = styled.canvas`
   left: 0;
 `;
 
-const Header = () => (
+const Header = ({ children }) => (
   <StyledHeader>
-    <h1>Jamie Weavis</h1>
-    <h2>Software Developer</h2>
+    {children}
     <StyledCanvas />
   </StyledHeader>
 );
+
+Header.propTypes = {
+  children: PropTypes.node.isRequired
+};
 
 export default Header;

@@ -29,7 +29,10 @@ const Layout = ({ children }) => (
           title={data.site.siteMetadata.title}
           meta={data.site.siteMetadata.metaTags}
         />
-        <Header />
+        <Header>
+          <h1>Jamie Weavis</h1>
+          <h2>Software Developer</h2>
+        </Header>
         <main>{children}</main>
         <Footer>
           &copy; Jamie Weavis 2018. All rights reserved.{' '}

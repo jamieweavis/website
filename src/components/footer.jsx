@@ -17,6 +17,7 @@ const StyledFooter = styled.footer`
   font-size: 1.4rem;
   position: relative;
   a {
+    border-radius: 0.5rem;
     color: ${colors.white};
     text-decoration: none;
     border: 1px solid white;
