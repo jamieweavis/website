@@ -6,14 +6,20 @@ export const fonts = {
   display: `${displayFont}, Avenir, Helvetica, Arial, sans-serif`
 };
 
+const gradientStart = "#8a2387";
+const gradientMiddle = "#e94057";
+const gradientEnd = "#f27121";
+
 export const colors = {
   white: '#fdfdfd',
   black: '#21252b',
   greyBlue: '#2c3139',
   gradient: {
-    start: '#8a2387',
-    middle: '#e94057',
-    end: '#f27121'
+    start: gradientStart,
+    middle: gradientMiddle,
+    end: gradientEnd,
+    header: `linear-gradient(45deg, ${gradientStart}, ${gradientMiddle}, ${gradientEnd})`,
+    footer: `linear-gradient(225deg, ${gradientStart}, ${gradientMiddle}, ${gradientEnd})`
   }
 };
 

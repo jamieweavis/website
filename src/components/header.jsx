@@ -7,24 +7,17 @@ import { media } from '../styles/mixins.css';
 
 const StyledHeader = styled.header`
   background-color: ${colors.gradient.start};
-  background: linear-gradient(
-    45deg,
-    ${colors.gradient.start},
-    ${colors.gradient.middle},
-    ${colors.gradient.end}
-  );
+  background: ${colors.gradient.header};
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12% 0;
-
+  padding: 17% 0;
   h2 {
     color: ${colors.black};
     margin-bottom: 0;
   }
-
   ${media(
     sizes.small,
     `
@@ -36,7 +29,6 @@ const StyledHeader = styled.header`
       }
     `
   )};
-
   ${media(
     sizes.xsmall,
     `

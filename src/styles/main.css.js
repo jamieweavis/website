@@ -15,7 +15,7 @@ export default injectGlobal`
   body {
     font-family: ${fonts.sansSerif};
     color: ${colors.white};
-    background-color: ${colors.white};
+    background-color: ${colors.black};
   }
 
   h1 {

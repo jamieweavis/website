@@ -1,0 +1,27 @@
+[
+  {
+    "id": "about",
+    "title": "About Me",
+    "description": "<p>My name is Jamie, I&apos;m a Software Developer from Northampton in the United Kingdom - I&apos;m currently working as a Lead JavaScript Developer for Smart Recruit.</p><p>Interests of mine include programming, open source software, graphic design, gaming and electronic music.</p>"
+  },
+  {
+    "id": "work",
+    "title": "Work Experience",
+    "description": "During my development career I have worked in the following positions"
+  },
+  {
+    "id": "skills",
+    "title": "My Skills",
+    "description": "I have experience working with a number of different technologies - the most important of which are listed below"
+  },
+  {
+    "id": "projects",
+    "title": "Featured Projects",
+    "description": "Here is a selection of my favourite personal open-source projects hosted on GitHub"
+  },
+  {
+    "id": "contact",
+    "title": "Contact Me",
+    "description": "Feel free to get in touch or follow me on the platforms listed below"
+  }
+]

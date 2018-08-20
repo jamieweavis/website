@@ -1,18 +1,29 @@
 import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
 
 import Region from '../region';
 import Container from '../container';
 
-const Contact = () => (
-  <Region>
-    <Container>
-      <h2>Featured Projects</h2>
-      <p>
-        Here is a selection of my favourite personal open-source projects hosted
-        on GitHub
-      </p>
-    </Container>
-  </Region>
+const Projects = () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        regionsJson(id: { eq: "projects" }) {
+          id
+          title
+          description
+        }
+      }
+    `}
+    render={({ regionsJson }) => (
+      <Region>
+        <Container>
+          <h2>{regionsJson.title}</h2>
+          <p>{regionsJson.description}</p>
+        </Container>
+      </Region>
+    )}
+  />
 );
 
-export default Contact;
+export default Projects;

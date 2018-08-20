@@ -7,12 +7,7 @@ import Container from './container';
 
 const StyledFooter = styled.footer`
   background-color: ${colors.gradient.start};
-  background: linear-gradient(
-    225deg,
-    ${colors.gradient.start},
-    ${colors.gradient.middle},
-    ${colors.gradient.end}
-  );
+  background: ${colors.gradient.footer};
   padding: 15px 0;
   font-size: 1.4rem;
   position: relative;
