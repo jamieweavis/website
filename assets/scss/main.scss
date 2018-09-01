@@ -1,0 +1,6 @@
+@import "variables.scss";
+
+::selection {
+  background: $brandTertiaryColor;
+  color: $black;
+}

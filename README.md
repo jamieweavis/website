@@ -1,3 +1,3 @@
 # portfolio
 
-> 👨‍💻 My developer portfolio website created with Gatsby
+> 👨‍💻 My developer portfolio app created with Nuxt.js
