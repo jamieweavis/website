@@ -2,12 +2,14 @@
 $brandPrimaryColor: #f5da55;
 $brandSecondaryColor: #eeda7c;
 $brandTertiaryColor: #f55570;
-$black: #1D1F21;
+$black: #1d1f21;
 $white: #fffdfd;
 $grey: #e9e0e0;
+$dark-grey: #5d5050;
 
-$font-primary: "Oswald";
-$font-secondary: "Roboto Slab";
+$font-primary: 'Oswald';
+$font-secondary: 'Lato';
 
-$font-stack-primary: $font-primary, "Impact", sans-serif;
+$font-stack-primary: $font-primary, 'Impact', sans-serif;
 $font-stack-secondary: $font-secondary, serif;
+$font-stack-tertiary: 'Montserrat';
