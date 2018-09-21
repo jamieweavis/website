@@ -35,15 +35,19 @@
       </nav>
 
     </aside>
-    <nuxt/>
+    <section class="main">
+      <CanvasAnimation/>
+      <nuxt/>
+    </section>
   </main>
 </template>
 
 <script>
-import Avatar from "@/assets/img/avatar@2x.jpg";
+import Avatar from '@/assets/img/avatar@2x.jpg';
+import CanvasAnimation from '@/components/CanvasAnimation.vue';
 
 export default {
-  components: { Avatar },
+  components: { Avatar, CanvasAnimation },
   data() {
     return {
       avatar: Avatar
@@ -54,7 +58,7 @@ export default {
 
 
 <style lang="scss">
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
 
 body {
   background-color: $black;
@@ -90,21 +94,13 @@ main {
   flex-direction: column;
   color: $black;
   position: relative;
-  transition: 0.2s ease;
+  transition: 0.3s ease-in-out;
   left: 0;
+  overflow: hidden;
+  white-space: nowrap;
 
-  @media screen and (max-width: 600px) {
-    left: -300px;
-
-    .social-navigation {
-      flex-direction: column;
-      align-items: flex-end;
-
-      &__item {
-        margin-right: 11px !important;
-        margin-top: 5px !important;
-      }
-    }
+  @media screen and (max-width: 860px) {
+    width: 0px;
   }
 
   .avatar {
@@ -119,6 +115,7 @@ main {
     display: flex;
     flex-direction: column;
     margin: 0 50px;
+    width: 200px;
 
     &__item {
       font-size: 22px;
@@ -148,7 +145,7 @@ main {
       &:before {
         z-index: -1;
         position: absolute;
-        content: "";
+        content: '';
         top: 0;
         right: 100%;
         bottom: 0;
@@ -171,6 +168,7 @@ main {
     margin-top: auto;
     justify-content: center;
     margin-bottom: 20px;
+    width: 300px;
 
     &__item {
       width: 30px;
@@ -193,6 +191,23 @@ main {
         height: 100%;
       }
     }
+  }
+}
+
+.main {
+  position: relative;
+  width: calc(100% - 300px);
+  transition: 0.3s ease-in-out;
+
+  @media screen and (max-width: 860px) {
+    width: 100%;
+  }
+
+  canvas {
+    position: absolute;
+    width: calc(100% - 300px);
+    height: 100%;
+    z-index: 0;
   }
 }
 </style>
