@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  name: "CanvasAnimation",
+  name: 'CanvasAnimation',
   mounted() {
-    window.addEventListener("resize", onResize, false);
+    window.addEventListener('resize', onResize, false);
 
     const canvas = this.$refs.canvas;
-    const context = canvas.getContext("2d");
+    const context = canvas.getContext('2d');
     const particleContainer = [];
     const scale = window.devicePixelRatio;
     let spawnRate;
@@ -56,12 +56,13 @@ export default {
     }
 
     function onResize() {
-      let width = document.body.clientWidth;
-      let height = canvas.offsetHeight;
+      const parentRect = canvas.parentElement.getBoundingClientRect();
+      let width = parentRect.width;
+      let height = parentRect.height;
       spawnRate = Math.ceil(width / height) / 2;
 
-      canvas.style.width = width + "px";
-      canvas.style.height = height + "px";
+      canvas.style.width = width + 'px';
+      canvas.style.height = height + 'px';
       canvas.width = width * scale;
       canvas.height = height * scale;
       context.scale(scale, scale);
