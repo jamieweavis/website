@@ -1,15 +1,12 @@
-// $brandPrimaryColor: #ffd600;
-$brandPrimaryColor: #f5da55;
-$brandSecondaryColor: #eeda7c;
-$brandTertiaryColor: #f55570;
-$black: #1d1f21;
-$white: #fffdfd;
-$grey: #e9e0e0;
-$dark-grey: #5d5050;
+// Fonts
+$font-primary: 'Oswald', 'Impact', sans-serif;
+$font-secondary: 'Lato', sans-serif;
 
-$font-primary: 'Oswald';
-$font-secondary: 'Lato';
-
-$font-stack-primary: $font-primary, 'Impact', sans-serif;
-$font-stack-secondary: $font-secondary, serif;
-$font-stack-tertiary: 'Montserrat';
+// Colors
+$color-black: #1d1f21;
+$color-white: #fffdfd;
+$color-grey: #e9e0e0;
+$color-dark-grey: #5d5050;
+$color-yellow: #f5da55;
+$color-red: #f55570;
+$color-navy: #2d3844;

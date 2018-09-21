@@ -108,11 +108,11 @@ export default {
 }
 
 .project {
-  background: $white;
+  background: $color-white;
   box-shadow: inset 0 0 0 3px rgb(163, 165, 171);
   padding: 20px;
   border-radius: 10px;
-  font-family: $font-stack-secondary;
+  font-family: $font-secondary;
 
   &__header {
     display: flex;
@@ -124,14 +124,14 @@ export default {
   }
   &__name {
     text-decoration: none;
-    color: $black;
+    color: $color-black;
   }
   &__version {
     margin-left: auto;
     color: rgb(163, 165, 171);
   }
   &__description {
-    color: $black;
+    color: $color-black;
   }
 }
 </style>

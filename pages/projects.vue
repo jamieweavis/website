@@ -24,16 +24,16 @@ export default {
 }
 
 h1 {
-  font-family: $font-stack-secondary;
+  font-family: $font-secondary;
   font-size: 40px;
-  color: $white;
+  color: $color-white;
   margin-bottom: 30px;
   text-align: center;
 }
 p {
-  font-family: $font-stack-secondary;
+  font-family: $font-secondary;
   font-size: 18px;
-  color: $white;
+  color: $color-white;
   margin-bottom: 50px;
   text-align: center;
 }

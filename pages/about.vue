@@ -9,13 +9,13 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
 
 h1 {
-  font-family: $font-stack-secondary;
+  font-family: $font-secondary;
   font-size: 24px;
   padding: 10px;
-  color: $white;
+  color: $color-white;
 }
 </style>
 

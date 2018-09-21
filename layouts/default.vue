@@ -61,7 +61,7 @@ export default {
 @import '@/assets/scss/variables.scss';
 
 body {
-  background-color: $black;
+  background-color: $color-black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
@@ -88,11 +88,11 @@ main {
 }
 
 .sidebar {
-  background-color: $brandPrimaryColor;
+  background-color: $color-yellow;
   width: 300px;
   display: flex;
   flex-direction: column;
-  color: $black;
+  color: $color-black;
   position: relative;
   transition: 0.3s ease-in-out;
   left: 0;
@@ -119,14 +119,14 @@ main {
 
     &__item {
       font-size: 22px;
-      color: $black;
+      color: $color-black;
       text-decoration: none;
-      font-family: $font-stack-primary;
+      font-family: $font-primary;
       text-transform: uppercase;
       font-weight: bold;
       margin-bottom: 10px;
       padding: 0 8px;
-      box-shadow: inset 0 0 0 0 $black;
+      box-shadow: inset 0 0 0 0 $color-black;
       position: relative;
       transition: color 0.3s ease;
       z-index: 0;
@@ -137,7 +137,7 @@ main {
         height: 25px;
       }
       &.nuxt-link-exact-active {
-        color: $white;
+        color: $color-white;
         &:before {
           right: 0;
         }
@@ -150,12 +150,12 @@ main {
         right: 100%;
         bottom: 0;
         left: 0;
-        background: $black;
+        background: $color-black;
         border-radius: 5px;
         transition: right 0.2s ease;
       }
       &:hover {
-        color: $white;
+        color: $color-white;
         &:before {
           right: 0;
         }
@@ -176,11 +176,11 @@ main {
       display: inline-block;
       margin-right: 20px;
       transition: transform 0.2s ease;
-      color: $black;
+      color: $color-black;
 
       &:hover {
         transform: scale(1.2);
-        color: $white;
+        color: $color-white;
       }
       &:last-child {
         margin: 0;

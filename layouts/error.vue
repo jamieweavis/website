@@ -10,14 +10,14 @@
 export default {
   props: ['error'],
   layout: 'index'
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
 
 .container {
-  font-family: $font-stack-primary;
+  font-family: $font-primary;
   text-transform: uppercase;
   font-weight: 600;
   display: flex;
@@ -29,22 +29,22 @@ export default {
 
 h1 {
   font-size: 40px;
-  color: $white;
+  color: $color-white;
   letter-spacing: 14px;
 }
 h2 {
   font-size: 100px;
   letter-spacing: 22px;
-  color: $brandPrimaryColor;
+  color: $color-yellow;
   line-height: 120px;
 }
 a {
   font-size: 40px;
-  color: $white;
+  color: $color-white;
   letter-spacing: 8px;
   text-decoration: none;
   &:hover {
-    color: $brandPrimaryColor;
+    color: $color-yellow;
   }
 }
 </style>

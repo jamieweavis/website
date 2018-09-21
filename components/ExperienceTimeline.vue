@@ -99,7 +99,7 @@ export default {
   padding: 20px;
   margin: 20px 0;
   box-sizing: border-box;
-  background: $white;
+  background: $color-white;
   width: 100%;
   border-radius: 10px;
   text-align: left;
@@ -116,17 +116,17 @@ export default {
     height: 65px;
   }
   &__title {
-    color: $black;
-    font-family: $font-stack-secondary;
+    color: $color-black;
+    font-family: $font-secondary;
     text-transform: uppercase;
   }
   &__company {
-    color: $dark-grey;
-    font-family: $font-stack-secondary;
+    color: $color-dark-grey;
+    font-family: $font-secondary;
   }
   &__period {
     color: rgb(163, 165, 171);
-    font-family: $font-stack-secondary;
+    font-family: $font-secondary;
   }
   &__type {
     margin-left: auto;
@@ -142,7 +142,7 @@ export default {
       top: 0;
       width: 4px;
       height: calc(100% - 100px);
-      background-color: $grey;
+      background-color: $color-grey;
       border-radius: 2px;
       left: 50%;
       margin: 50px 0 50px -2px;
@@ -163,8 +163,8 @@ export default {
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: $black;
-      box-shadow: 0 0 0 3px $grey;
+      background: $color-black;
+      box-shadow: 0 0 0 3px $color-grey;
     }
     &:nth-child(2n) {
       margin-left: auto;

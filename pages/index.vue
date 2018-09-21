@@ -45,7 +45,7 @@ export default {
 @import '@/assets/scss/variables.scss';
 
 .container {
-  font-family: $font-stack-primary;
+  font-family: $font-primary;
   text-transform: uppercase;
   font-weight: 600;
   display: flex;
@@ -67,18 +67,18 @@ canvas {
 
 span.i-am {
   font-size: 50px;
-  color: $white;
+  color: $color-white;
   letter-spacing: 14px;
 }
 h1.name {
   font-size: 80px;
   letter-spacing: 12px;
-  color: $brandPrimaryColor;
+  color: $color-yellow;
   line-height: 110px;
 }
 h2.title {
   font-size: 50px;
-  color: $white;
+  color: $color-white;
   letter-spacing: 8px;
 }
 
@@ -88,7 +88,7 @@ h2.title {
   &__item {
     font-size: 18px;
     margin-right: 50px;
-    color: $grey;
+    color: $color-grey;
     text-decoration: none;
     transition: color 0.3s ease;
     font-weight: normal;
@@ -97,7 +97,7 @@ h2.title {
       margin: 0;
     }
     &:hover {
-      color: $brandPrimaryColor;
+      color: $color-yellow;
     }
   }
 }
@@ -111,11 +111,11 @@ h2.title {
     display: inline-block;
     margin-right: 20px;
     transition: transform 0.2s ease;
-    color: $brandPrimaryColor;
+    color: $color-yellow;
 
     &:hover {
       transform: scale(1.2);
-      color: $brandSecondaryColor;
+      color: lighten($color-yellow, 10%);
     }
     &:last-child {
       margin: 0;

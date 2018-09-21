@@ -3,10 +3,10 @@
 </template>
 
 <style lang="scss">
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
 
 body {
-  background-color: $black;
+  background-color: $color-black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -ms-text-size-adjust: 100%;
