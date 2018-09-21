@@ -1,21 +1,41 @@
 <template>
-  <section>
+  <section class="projects-section">
     <h1>My Projects</h1>
+    <p>
+      Below is a selection of open source projects of mine
+    </p>
+    <ProjectsGrid/>
   </section>
 </template>
 
 <script>
-export default {};
+import ProjectsGrid from '@/components/ProjectsGrid.vue';
+
+export default {
+  components: { ProjectsGrid }
+};
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
+
+.projects-section {
+  padding: 30px;
+}
 
 h1 {
   font-family: $font-stack-secondary;
-  font-size: 24px;
-  padding: 10px;
+  font-size: 40px;
   color: $white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+p {
+  font-family: $font-stack-secondary;
+  font-size: 18px;
+  color: $white;
+  margin-bottom: 50px;
+  text-align: center;
 }
 </style>
 
