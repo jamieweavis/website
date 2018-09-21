@@ -33,16 +33,16 @@
 </template>
 
 <script>
-import CanvasAnimation from "@/components/CanvasAnimation.vue";
+import CanvasAnimation from '@/components/CanvasAnimation.vue';
 
 export default {
-  layout: "index",
+  layout: 'index',
   components: { CanvasAnimation }
 };
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/scss/variables.scss";
+@import '@/assets/scss/variables.scss';
 
 .container {
   font-family: $font-stack-primary;
@@ -91,6 +91,7 @@ h2.title {
     color: $grey;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: normal;
 
     &:last-child {
       margin: 0;
