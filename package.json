@@ -16,7 +16,8 @@
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
     "@fortawesome/fontawesome-free-solid": "^5.0.13",
     "nuxt": "^1.0.0",
-    "qonfucius-nuxt-fontawesome": "^0.0.3"
+    "qonfucius-nuxt-fontawesome": "^0.0.3",
+    "twemoji": "^11.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
