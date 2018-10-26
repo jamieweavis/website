@@ -1,6 +1,51 @@
 @import 'variables.scss';
 
+body {
+  font-family: $font-family;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+  margin: 0;
+  color: $color-navy;
+  padding-top: 80px;
+}
+span.emoji {
+  font-size: 2.4rem;
+  vertical-align: middle;
+}
+h1 span.emoji {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+a.underline::before {
+  content: ' ';
+  background-color: $color-yellow;
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: -1px;
+  height: 4px;
+  transition: 0.4s ease;
+  border-radius: 2px;
+  z-index: -1;
+}
+a.underline:hover::before {
+  height: calc(100% + 2px);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 50px;
+
+  &--flex {
+    display: flex;
+  }
+}
+
 ::selection {
-  background: $color-red;
-  color: $color-black;
+  background-color: $color-red;
 }

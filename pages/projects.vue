@@ -1,41 +1,89 @@
 <template>
-  <section class="projects-section">
-    <h1>My Projects</h1>
-    <p>
-      Below is a selection of open source projects of mine
-    </p>
-    <ProjectsGrid/>
-  </section>
+  <div class="container">
+    <ul>
+      <li 
+        v-for="project in projects" 
+        :key="project.index">
+        <h2>{{ project.name }}</h2>
+        <p><span class="emoji">{{ project.emoji }}</span> {{ project.description }}</p>
+        <p><span class="emoji">{{ project.statEmoji }}</span> {{ project.statText }}</p>
+        <p><span class="emoji">🛠</span> <span v-text="project.technologies.join(', ')"/></p>
+        <a 
+          class="underline" 
+          href="#">View Project</a>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script>
-import ProjectsGrid from '@/components/ProjectsGrid.vue';
-
 export default {
-  components: { ProjectsGrid }
+  data: () => ({
+    projects: [
+      {
+        name: 'Streaker',
+        emoji: '🐙',
+        description: 'GitHub contribution streak tracking menubar app',
+        statEmoji: '⭐️',
+        statText: '44 stars',
+        technologies: ['JavaScript', 'Electron']
+      },
+      {
+        name: 'Dodgem',
+        emoji: '🎪',
+        description: 'Rocket League Garage trade bumping automation CLI bot',
+        statEmoji: '📦',
+        statText: '3k downloads',
+        technologies: ['JavaScript', 'Node', 'Puppeteer']
+      },
+      {
+        name: 'Contribution',
+        emoji: '🗓',
+        description:
+          'GitHub contribution count & streak fetcher with zero dependencies',
+        statEmoji: '📦',
+        statText: '1k downloads',
+        technologies: ['JavaScript', 'Node', 'Jest']
+      },
+      {
+        name: 'Prosper',
+        emoji: '💎',
+        description:
+          'Rocket League Garage trade aggregation & reporting CLI tool',
+        statEmoji: '📦',
+        statText: '1k downloads',
+        technologies: ['JavaScript', 'Node', 'Puppeteer']
+      },
+      {
+        name: 'Dotman',
+        emoji: '🔮',
+        description: 'Simplistic dotfile manager',
+        statEmoji: '📦',
+        statText: '60 downloads',
+        technologies: ['TypeScript', 'Node', 'oclif']
+      },
+      {
+        name: 'AFK',
+        emoji: '💤',
+        description: 'The missing screensaver shortcut for macOS',
+        statEmoji: '⭐️',
+        statText: '5 stars',
+        technologies: ['JavaScript', 'Electron']
+      }
+    ]
+  })
 };
 </script>
 
 <style lang="scss" scoped>
 @import '@/assets/scss/variables.scss';
 
-.projects-section {
-  padding: 30px;
-}
+ul {
+  list-style: none;
+  padding: 0;
 
-h1 {
-  font-family: $font-secondary;
-  font-size: 40px;
-  color: $color-white;
-  margin-bottom: 30px;
-  text-align: center;
-}
-p {
-  font-family: $font-secondary;
-  font-size: 18px;
-  color: $color-white;
-  margin-bottom: 50px;
-  text-align: center;
+  li {
+    margin-bottom: 100px;
+  }
 }
 </style>
-

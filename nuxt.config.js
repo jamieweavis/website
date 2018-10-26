@@ -21,8 +21,7 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Oswald|Roboto|Montserrat|Lato'
+        href: 'https://fonts.googleapis.com/css?family=Nunito'
       }
     ]
   },
@@ -49,17 +48,6 @@ module.exports = {
       {
         package: '@fortawesome/fontawesome-free-brands',
         icons: ['faGithub', 'faTwitter', 'faLinkedinIn']
-      },
-      {
-        package: '@fortawesome/fontawesome-free-solid',
-        icons: [
-          'faHome',
-          'faAddressCard',
-          'faBriefcase',
-          'faFolderOpen',
-          'faEnvelope',
-          'faGraduationCap'
-        ]
       }
     ]
   }

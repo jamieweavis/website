@@ -1,3 +1,5 @@
-# portfolio
+# website
 
-> 👨‍💻 My developer portfolio app created with Nuxt.js
+> 👨‍💻 My website created with Nuxt & Now
+
+[https://jamieweavis.com](https://jamieweavis.com)
