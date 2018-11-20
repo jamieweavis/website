@@ -19,21 +19,25 @@ a {
   text-decoration: none;
   color: inherit;
   position: relative;
-}
-a.underline::before {
-  content: ' ';
-  background-color: $color-yellow;
-  position: absolute;
-  left: -4px;
-  right: -4px;
-  bottom: -1px;
-  height: 4px;
-  transition: 0.4s ease;
-  border-radius: 2px;
-  z-index: -1;
-}
-a.underline:hover::before {
-  height: calc(100% + 2px);
+
+  &.underline {
+    white-space: nowrap;
+    &::before {
+      content: ' ';
+      background-color: $color-yellow;
+      position: absolute;
+      left: -4px;
+      right: -4px;
+      bottom: -1px;
+      height: 4px;
+      transition: 0.4s ease;
+      border-radius: 2px;
+      z-index: -1;
+    }
+    &:hover::before {
+      height: calc(100% + 2px);
+    }
+  }
 }
 
 .container {
