@@ -1,5 +1,6 @@
 {
   "name": "website",
+  "version": 1,
   "scale": {
     "bru": {
       "min": 1,
