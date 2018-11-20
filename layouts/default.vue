@@ -64,7 +64,7 @@ export default {
   data: () => ({
     navigation: null,
     showingNavigationShadow: false,
-    navigationShadowThreshold: 80
+    navigationShadowThreshold: 80,
   }),
   mounted() {
     this.navigation = document.querySelector('nav.navigation');
@@ -83,8 +83,8 @@ export default {
     },
     checkShowNavigationShadow() {
       return window.scrollY > this.navigationShadowThreshold;
-    }
-  }
+    },
+  },
 };
 </script>
 

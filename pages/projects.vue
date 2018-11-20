@@ -31,7 +31,7 @@ export default {
         description: 'GitHub contribution streak tracking menubar app',
         statEmojiClass: 'emoji--star',
         statText: '44 stars',
-        technologies: ['JavaScript', 'Electron']
+        technologies: ['JavaScript', 'Electron'],
       },
       {
         name: 'Dodgem',
@@ -39,7 +39,7 @@ export default {
         description: 'Rocket League Garage trade bumping automation CLI bot',
         statEmojiClass: 'emoji--box',
         statText: '3k downloads',
-        technologies: ['JavaScript', 'Node', 'Puppeteer']
+        technologies: ['JavaScript', 'Node', 'Puppeteer'],
       },
       {
         name: 'Contribution',
@@ -48,7 +48,7 @@ export default {
           'GitHub contribution count & streak fetcher with zero dependencies',
         statEmojiClass: 'emoji--box',
         statText: '1k downloads',
-        technologies: ['JavaScript', 'Node', 'Jest']
+        technologies: ['JavaScript', 'Node', 'Jest'],
       },
       {
         name: 'Prosper',
@@ -57,7 +57,7 @@ export default {
           'Rocket League Garage trade aggregation & reporting CLI tool',
         statEmojiClass: 'emoji--box',
         statText: '1k downloads',
-        technologies: ['JavaScript', 'Node', 'Puppeteer']
+        technologies: ['JavaScript', 'Node', 'Puppeteer'],
       },
       {
         name: 'Dotman',
@@ -65,7 +65,7 @@ export default {
         description: 'Simplistic dotfile manager',
         statEmojiClass: 'emoji--box',
         statText: '60 downloads',
-        technologies: ['TypeScript', 'Node', 'oclif']
+        technologies: ['TypeScript', 'Node', 'oclif'],
       },
       {
         name: 'AFK',
@@ -73,10 +73,10 @@ export default {
         description: 'The missing screensaver shortcut for macOS',
         statEmojiClass: 'emoji--star',
         statText: '5 stars',
-        technologies: ['JavaScript', 'Electron']
-      }
-    ]
-  })
+        technologies: ['JavaScript', 'Electron'],
+      },
+    ],
+  }),
 };
 </script>
 

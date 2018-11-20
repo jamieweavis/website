@@ -30,7 +30,7 @@ export default {
         website: 'https://smartrecruitonline.com',
         emojiClass: 'emoji--handshake',
         date: 'October 2018 - Present',
-        skills: ['Angular', 'Node', 'Sails', 'MySQL']
+        skills: ['Angular', 'Node', 'Sails', 'MySQL'],
       },
       {
         title: 'Frontend Developer',
@@ -38,7 +38,7 @@ export default {
         website: 'https://www.propeller.co.uk/',
         emojiClass: 'emoji--robot',
         date: 'June 2018 - September 2018 (4 months)',
-        skills: ['JavaScript', 'PHP', 'WordPress']
+        skills: ['JavaScript', 'PHP', 'WordPress'],
       },
       {
         title: 'Software Developer',
@@ -46,7 +46,7 @@ export default {
         website: 'https://maxemail.xtremepush.com/',
         emojiClass: 'emoji--mail-full',
         date: 'June 2016 - June 2018 (2 years)',
-        skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL']
+        skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL'],
       },
       {
         title: 'Junior Software Developer',
@@ -54,7 +54,7 @@ export default {
         website: 'https://maxemail.xtremepush.com/',
         emojiClass: 'emoji--mail-empty',
         date: 'July 2014 - June 2016 (2 years)',
-        skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL']
+        skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL'],
       },
       {
         title: 'BSc Computer Science',
@@ -62,7 +62,7 @@ export default {
         website: 'https://www.northampton.ac.uk/',
         emojiClass: 'emoji--graduation',
         date: '2010 - 2014 (4 years)',
-        skills: ['Internet Technology & Security Specialisation']
+        skills: ['Internet Technology & Security Specialisation'],
       },
       {
         title: 'BTEC General Computing',
@@ -70,10 +70,10 @@ export default {
         website: 'https://www.tresham.ac.uk/',
         emojiClass: 'emoji--backpack',
         date: '2007 - 2010 (3 years)',
-        skills: []
-      }
-    ]
-  })
+        skills: [],
+      },
+    ],
+  }),
 };
 </script>
 
