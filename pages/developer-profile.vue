@@ -1,11 +1,9 @@
 <template>
   <div class="container">
     <ul>
-      <li 
-        v-for="category in categories" 
-        :key="category.index">
+      <li v-for="category in categories" :key="category.index">
         <h2>{{ category.title }}</h2>
-        <p v-html="category.text"/>
+        <p v-html="category.text" />
       </li>
     </ul>
   </div>

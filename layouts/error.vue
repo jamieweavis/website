@@ -1,9 +1,10 @@
 <template>
   <section class="container">
     <h1>{{ error.statusCode }}</h1>
-    <p>{{ error.message }}, <nuxt-link
-      class="underline"
-      to="/">return to home</nuxt-link>.</p>
+    <p>
+      {{ error.message }},
+      <nuxt-link class="underline" to="/">return to home</nuxt-link>.
+    </p>
   </section>
 </template>
 

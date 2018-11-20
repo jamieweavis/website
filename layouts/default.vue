@@ -2,24 +2,14 @@
   <div class="app">
     <nav class="navigation">
       <div class="container  container--flex">
-        <nuxt-link
-          class="navigation__item"
-          to="/">
-          Home
-        </nuxt-link>
-        <nuxt-link
-          class="navigation__item"
-          to="/experience">
+        <nuxt-link class="navigation__item" to="/"> Home </nuxt-link>
+        <nuxt-link class="navigation__item" to="/experience">
           Experience
         </nuxt-link>
-        <nuxt-link
-          class="navigation__item"
-          to="/projects">
+        <nuxt-link class="navigation__item" to="/projects">
           Projects
         </nuxt-link>
-        <nuxt-link
-          class="navigation__item"
-          to="/developer-profile">
+        <nuxt-link class="navigation__item" to="/developer-profile">
           Developer Profile
         </nuxt-link>
 
@@ -27,39 +17,42 @@
           <a
             class="social-navigation__item"
             href="https://github.com/jamieweavis/"
-            target="_blank">
+            target="_blank"
+          >
             <fa-icon :icon="['fab', 'github']" />
           </a>
           <a
             class="social-navigation__item"
             href="https://twitter.com/jamieweavis/"
-            target="_blank">
+            target="_blank"
+          >
             <fa-icon :icon="['fab', 'twitter']" />
           </a>
           <a
             class="social-navigation__item"
             href="https://www.linkedin.com/in/jamieweavis/"
-            target="_blank">
+            target="_blank"
+          >
             <fa-icon :icon="['fab', 'linkedin-in']" />
           </a>
         </nav>
       </div>
     </nav>
 
-    <main>
-      <nuxt/>
-    </main>
+    <main><nuxt /></main>
 
     <footer class="footer">
       <div class="container">
         <span class="footer__text">
-          Designed &amp; developed by <strong>Jamie Weavis</strong> with <a
-            class="underline"
-            href="https://nuxtjs.org/"
-            target="_blank">Nuxt</a> &amp; <a
-              class="underline"
-              href="https://zeit.co/now"
-              target="_blank">Now</a> <span class="emoji">❤️</span>
+          Designed &amp; developed by <strong>Jamie Weavis</strong> with
+          <a class="underline" href="https://nuxtjs.org/" target="_blank"
+            >Nuxt</a
+          >
+          &amp;
+          <a class="underline" href="https://zeit.co/now" target="_blank"
+            >Now</a
+          >
+          <span class="emoji">❤️</span>
         </span>
       </div>
     </footer>
@@ -67,8 +60,6 @@
 </template>
 
 <script>
-import Avatar from '@/assets/img/avatar@2x.jpg';
-
 export default {
   data: () => ({
     navigation: null,
@@ -91,7 +82,6 @@ export default {
       }
     },
     checkShowNavigationShadow() {
-      console.log(window.scrollY > this.navigationShadowThreshold);
       return window.scrollY > this.navigationShadowThreshold;
     }
   }

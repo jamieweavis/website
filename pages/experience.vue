@@ -1,20 +1,20 @@
 <template>
   <div class="container">
     <ul class="experience-timeline">
-      <li 
-        v-for="position in positions" 
-        :key="position.index" 
-        class="experience-timeline__item">
+      <li
+        v-for="position in positions"
+        :key="position.index"
+        class="experience-timeline__item"
+      >
         <div>
-          <strong>{{ position.title }}</strong>
-          @ <a 
-            :href="position.website" 
-            class="underline" 
-            target="_blank">{{ position.company }}</a>
+          <strong>{{ position.title }}</strong> @
+          <a :href="position.website" class="underline" target="_blank">{{
+            position.company
+          }}</a>
           <span class="emoji">{{ position.emoji }}</span>
         </div>
         <div class="date">{{ position.date }}</div>
-        <div v-text="position.skills.join(', ')"/>
+        <div v-text="position.skills.join(', ')" />
       </li>
     </ul>
   </div>

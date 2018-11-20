@@ -1,16 +1,21 @@
 <template>
   <div class="container">
     <ul>
-      <li 
-        v-for="project in projects" 
-        :key="project.index">
+      <li v-for="project in projects" :key="project.index">
         <h2>{{ project.name }}</h2>
-        <p><span class="emoji">{{ project.emoji }}</span> {{ project.description }}</p>
-        <p><span class="emoji">{{ project.statEmoji }}</span> {{ project.statText }}</p>
-        <p><span class="emoji">🛠</span> <span v-text="project.technologies.join(', ')"/></p>
-        <a 
-          class="underline" 
-          href="#">View Project</a>
+        <p>
+          <span class="emoji">{{ project.emoji }}</span>
+          {{ project.description }}
+        </p>
+        <p>
+          <span class="emoji">{{ project.statEmoji }}</span>
+          {{ project.statText }}
+        </p>
+        <p>
+          <span class="emoji">🛠</span>
+          <span v-text="project.technologies.join(', ')" />
+        </p>
+        <a class="underline" href="#">View Project</a>
       </li>
     </ul>
   </div>
