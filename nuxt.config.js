@@ -40,7 +40,8 @@ module.exports = {
   },
   css: [
     { src: '@/assets/scss/transitions.scss', lang: 'scss' },
-    { src: '@/assets/scss/main.scss', lang: 'scss' }
+    { src: '@/assets/scss/main.scss', lang: 'scss' },
+    { src: '@/assets/scss/emoji.scss', lang: 'scss' }
   ],
   modules: ['qonfucius-nuxt-fontawesome'],
   fontAwesome: {

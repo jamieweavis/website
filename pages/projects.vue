@@ -4,15 +4,15 @@
       <li v-for="project in projects" :key="project.index">
         <h2>{{ project.name }}</h2>
         <p>
-          <span class="emoji">{{ project.emoji }}</span>
+          <span class="emoji" :class="project.emojiClass"></span>
           {{ project.description }}
         </p>
         <p>
-          <span class="emoji">{{ project.statEmoji }}</span>
+          <span class="emoji" :class="project.statEmojiClass"></span>
           {{ project.statText }}
         </p>
         <p>
-          <span class="emoji">🛠</span>
+          <span class="emoji emoji--settings"></span>
           <span v-text="project.technologies.join(', ')" />
         </p>
         <a class="underline" href="#">View Project</a>
@@ -27,51 +27,51 @@ export default {
     projects: [
       {
         name: 'Streaker',
-        emoji: '🐙',
+        emojiClass: 'emoji--octopus',
         description: 'GitHub contribution streak tracking menubar app',
-        statEmoji: '⭐️',
+        statEmojiClass: 'emoji--star',
         statText: '44 stars',
         technologies: ['JavaScript', 'Electron']
       },
       {
         name: 'Dodgem',
-        emoji: '🎪',
+        emojiClass: 'emoji--circus',
         description: 'Rocket League Garage trade bumping automation CLI bot',
-        statEmoji: '📦',
+        statEmojiClass: 'emoji--box',
         statText: '3k downloads',
         technologies: ['JavaScript', 'Node', 'Puppeteer']
       },
       {
         name: 'Contribution',
-        emoji: '🗓',
+        emojiClass: 'emoji--calendar',
         description:
           'GitHub contribution count & streak fetcher with zero dependencies',
-        statEmoji: '📦',
+        statEmojiClass: 'emoji--box',
         statText: '1k downloads',
         technologies: ['JavaScript', 'Node', 'Jest']
       },
       {
         name: 'Prosper',
-        emoji: '💎',
+        emojiClass: 'emoji--gem',
         description:
           'Rocket League Garage trade aggregation & reporting CLI tool',
-        statEmoji: '📦',
+        statEmojiClass: 'emoji--box',
         statText: '1k downloads',
         technologies: ['JavaScript', 'Node', 'Puppeteer']
       },
       {
         name: 'Dotman',
-        emoji: '🔮',
+        emojiClass: 'emoji--orb',
         description: 'Simplistic dotfile manager',
-        statEmoji: '📦',
+        statEmojiClass: 'emoji--box',
         statText: '60 downloads',
         technologies: ['TypeScript', 'Node', 'oclif']
       },
       {
         name: 'AFK',
-        emoji: '💤',
+        emojiClass: 'emoji--sleep',
         description: 'The missing screensaver shortcut for macOS',
-        statEmoji: '⭐️',
+        statEmojiClass: 'emoji--star',
         statText: '5 stars',
         technologies: ['JavaScript', 'Electron']
       }

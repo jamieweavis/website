@@ -1,0 +1,75 @@
+.emoji {
+  display: inline-block;
+  vertical-align: text-top;
+  background-size: contain;
+
+  h1 > & {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  div > &,
+  p > &,
+  li > &,
+  .footer__text > & {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  &--uk {
+    background-image: url(../img/emoji/uk.png);
+  }
+  &--box {
+    background-image: url(../img/emoji/box.png);
+  }
+  &--gem {
+    background-image: url(../img/emoji/gem.png);
+  }
+  &--orb {
+    background-image: url(../img/emoji/orb.png);
+  }
+  &--wave {
+    background-image: url(../img/emoji/wave.png);
+  }
+  &--star {
+    background-image: url(../img/emoji/star.png);
+  }
+  &--sleep {
+    background-image: url(../img/emoji/sleep.png);
+  }
+  &--heart {
+    background-image: url(../img/emoji/heart.png);
+  }
+  &--robot {
+    background-image: url(../img/emoji/robot.png);
+  }
+  &--books {
+    background-image: url(../img/emoji/books.png);
+  }
+  &--circus {
+    background-image: url(../img/emoji/circus.png);
+  }
+  &--octopus {
+    background-image: url(../img/emoji/octopus.png);
+  }
+  &--backpack {
+    background-image: url(../img/emoji/backpack.png);
+  }
+  &--settings {
+    background-image: url(../img/emoji/settings.png);
+  }
+  &--calendar {
+    background-image: url(../img/emoji/calendar.png);
+  }
+  &--handshake {
+    background-image: url(../img/emoji/handshake.png);
+  }
+  &--mail-full {
+    background-image: url(../img/emoji/mail-full.png);
+  }
+  &--mail-empty {
+    background-image: url(../img/emoji/mail-empty.png);
+  }
+  &--graduation {
+    background-image: url(../img/emoji/graduation.png);
+  }
+}

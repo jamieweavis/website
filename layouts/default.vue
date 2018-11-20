@@ -52,7 +52,7 @@
           <a class="underline" href="https://zeit.co/now" target="_blank"
             >Now</a
           >
-          <span class="emoji">❤️</span>
+          <span class="emoji emoji--heart"></span>
         </span>
       </div>
     </footer>

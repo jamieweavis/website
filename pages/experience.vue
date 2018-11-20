@@ -11,7 +11,7 @@
           <a :href="position.website" class="underline" target="_blank">{{
             position.company
           }}</a>
-          <span class="emoji">{{ position.emoji }}</span>
+          <span class="emoji" :class="position.emojiClass"></span>
         </div>
         <div class="date">{{ position.date }}</div>
         <div v-text="position.skills.join(', ')" />
@@ -28,7 +28,7 @@ export default {
         title: 'Lead Developer',
         company: 'Smart Recruit',
         website: 'https://smartrecruitonline.com',
-        emoji: '🤝',
+        emojiClass: 'emoji--handshake',
         date: 'October 2018 - Present',
         skills: ['Angular', 'Node', 'Sails', 'MySQL']
       },
@@ -36,7 +36,7 @@ export default {
         title: 'Frontend Developer',
         company: 'Propeller',
         website: 'https://www.propeller.co.uk/',
-        emoji: '🤖',
+        emojiClass: 'emoji--robot',
         date: 'June 2018 - September 2018 (4 months)',
         skills: ['JavaScript', 'PHP', 'WordPress']
       },
@@ -44,7 +44,7 @@ export default {
         title: 'Software Developer',
         company: 'Emailcenter',
         website: 'https://maxemail.xtremepush.com/',
-        emoji: '📬',
+        emojiClass: 'emoji--mail-full',
         date: 'June 2016 - June 2018 (2 years)',
         skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL']
       },
@@ -52,7 +52,7 @@ export default {
         title: 'Junior Software Developer',
         company: 'Emailcenter',
         website: 'https://maxemail.xtremepush.com/',
-        emoji: '📭',
+        emojiClass: 'emoji--mail-empty',
         date: 'July 2014 - June 2016 (2 years)',
         skills: ['JavaScript', 'ExtJS', 'PHP', 'MySQL']
       },
@@ -60,7 +60,7 @@ export default {
         title: 'BSc Computer Science',
         company: 'University of Northampton',
         website: 'https://www.northampton.ac.uk/',
-        emoji: '🎓',
+        emojiClass: 'emoji--graduation',
         date: '2010 - 2014 (4 years)',
         skills: ['Internet Technology & Security Specialisation']
       },
@@ -68,7 +68,7 @@ export default {
         title: 'BTEC General Computing',
         company: 'Tresham College',
         website: 'https://www.tresham.ac.uk/',
-        emoji: '📚',
+        emojiClass: 'emoji--backpack',
         date: '2007 - 2010 (3 years)',
         skills: []
       }
