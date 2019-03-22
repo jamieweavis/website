@@ -1,5 +1,5 @@
 # website
 
-> 👨‍💻 My website created with Nuxt & Now
+> 👨‍💻 My website
 
-[https://jamieweavis.com](https://jamieweavis.com)
+[https://jamieweavis.dev](https://jamieweavis.dev)
