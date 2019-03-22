@@ -7,11 +7,5 @@
       "use": "@now/static-build",
       "config": { "distDir": "public" }
     }
-  ],
-  "scale": {
-    "bru": {
-      "min": 1,
-      "max": 1
-    }
-  }
+  ]
 }
