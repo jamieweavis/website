@@ -21,6 +21,11 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-react": "^7.12.4",
     "prettier": "^1.16.4"
   },
   "homepage": "https://jamieweavis.dev",
@@ -37,6 +42,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "lint": "eslint .",
     "now-build": "npm run build",
     "serve": "gatsby serve",
     "start": "npm run develop",
