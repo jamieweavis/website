@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "website",
+  "regions": ["bru"],
   "builds": [
     {
       "src": "package.json",
