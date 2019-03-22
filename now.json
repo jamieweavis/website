@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "website",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ],
+  "scale": {
+    "bru": {
+      "min": 1,
+      "max": 1
+    }
+  }
+}
