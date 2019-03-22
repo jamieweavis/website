@@ -7,7 +7,7 @@
     "url": "https://github.com/jamieweavis/website/issues"
   },
   "dependencies": {
-    "gatsby": "^2.2.5",
+    "gatsby": "^2.2.7",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
