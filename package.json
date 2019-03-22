@@ -1,9 +1,11 @@
 {
-  "name": "gatsby-starter-default",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "name": "website",
+  "description": "My website",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jamie Weavis <jamie.weavis@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/jamieweavis/website/issues"
+  },
   "dependencies": {
     "gatsby": "^2.2.5",
     "gatsby-image": "^2.0.34",
@@ -21,24 +23,23 @@
   "devDependencies": {
     "prettier": "^1.16.4"
   },
+  "homepage": "https://jamieweavis.dev",
   "keywords": [
+    "website",
     "gatsby"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamieweavis/website"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
+    "now-build": "npm run build",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "now-build": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "start": "npm run develop",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
