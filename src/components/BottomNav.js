@@ -12,7 +12,7 @@ const StyledList = styled.ul`
 
   a {
     font-family: Lato;
-    margin: 0 10px;
+    margin: 0 20px;
     color: #fefefe;
     font-size: 24px;
     letter-spacing: -0.3px;
