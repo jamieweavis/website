@@ -46,7 +46,7 @@ const IndexPage = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://twitter.com/jamieweavis"
+            href="https://www.linkedin.com/in/jamieweavis/"
           >
             LinkedIn
           </a>
