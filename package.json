@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "description": "My website",
+  "description": "My minimalist landing page website built with Gatsby",
   "version": "0.1.0",
   "author": "Jamie Weavis <jamie.weavis@gmail.com>",
   "bugs": {
