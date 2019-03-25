@@ -18,6 +18,12 @@ const StyledList = styled.ul`
     letter-spacing: -0.3px;
     text-decoration: none;
     transition: color 0.2s ease;
+
+    @media only screen and (max-width: 512px) {
+      margin: 0 15px;
+      font-size: 22px;
+    }
+
     &:hover {
       color: ${({ side }) => (side === 'right' ? '#fd5c63' : '#171717')};
     }
