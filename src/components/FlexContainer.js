@@ -6,6 +6,7 @@ const Main = styled.main`
   display: flex;
   height: 100%;
   position: relative;
+  user-select: none;
   @media only screen and (max-width: 1024px) {
     flex-direction: column;
   }
