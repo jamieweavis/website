@@ -11,7 +11,7 @@ export default styled.div`
   position: absolute;
   height: 100%;
   width: 100%;
-  animation: ${slide} 20s linear infinite;
+  animation: ${slide} 40s linear infinite;
   &:after {
     position: absolute;
     width: 200%;
