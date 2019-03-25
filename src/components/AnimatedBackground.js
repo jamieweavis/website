@@ -4,7 +4,7 @@ import topography from '../images/topography';
 
 const slide = keyframes`
   from { transform: translateX(0) translateY(0); }
-  to { transform: translateX(-600px) translateY(-600px); }
+  to { transform: translateX(-100%) translateY(-100%); }
 `;
 
 export default styled.div`
