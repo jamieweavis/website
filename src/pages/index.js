@@ -23,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
 const IndexPage = () => (
   <React.Fragment>
     <GlobalStyle />
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO keywords={[`gatsby`, `application`, `react`]} />
     <Container>
       <Side side="left">
         <Title>Jamie Weavis</Title>

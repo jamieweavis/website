@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 const PageNotFound = () => (
   <React.Fragment>
     <GlobalStyle />
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO keywords={[`gatsby`, `application`, `react`]} />
     <Container>
       <Side side="left">
         <Title>404</Title>
