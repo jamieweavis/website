@@ -2,12 +2,19 @@
   "version": 2,
   "name": "website",
   "regions": ["bru"],
-  "alias": ["jamieweavis.dev", "www.jamieweavis.dev"],
+  "alias": ["www.jamieweavis.dev"],
   "builds": [
     {
       "src": "package.json",
       "use": "@now/static-build",
       "config": { "distDir": "public" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "status": 301,
+      "headers": { "Location": "https://jamieweavis.dev/$1" }
     }
   ]
 }
