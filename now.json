@@ -2,7 +2,7 @@
   "version": 2,
   "name": "website",
   "regions": ["bru"],
-  "alias": ["www.jamieweavis.dev"],
+  "alias": ["www.jamieweavis.dev", "jamieweavis.dev"],
   "builds": [
     {
       "src": "package.json",
