@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { FaTwitter, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 import SEO from '../components/seo';
 import Container from '../components/FlexContainer';
@@ -17,6 +18,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    color: #fff;
   }
 `;
 
@@ -31,6 +33,7 @@ const IndexPage = () => (
         `Software`,
         `Engineer`,
         `United Kingdom`,
+        'UK',
       ]}
     />
     <Container>
@@ -43,28 +46,28 @@ const IndexPage = () => (
             rel="noopener noreferrer"
             href="https://twitter.com/jamieweavis"
           >
-            Twitter
+            <FaTwitter />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/jamieweavis"
           >
-            GitHub
+            <FaGithub />
           </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/jamieweavis/"
           >
-            LinkedIn
+            <FaLinkedinIn />
           </a>
         </BottomNav>
       </Side>
       <Side side="right">
         <AnimatedBackground />
         <Description>
-          I like building stuff, currently engineering at{' '}
+          I like to build stuff, currently engineering at{' '}
           <a
             target="_blank"
             rel="noopener noreferrer"

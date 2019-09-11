@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Jamie Weavis | Full Stack JavaScript Developer`,
+    title: `Jamie Weavis | Full Stack JavaScript Developer | United Kingdom`,
     description: `Full Stack JavaScript Developer from The United Kingdom`,
     author: `@jamieweavis`,
   },
@@ -22,10 +22,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#171717`,
-        theme_color: `#fd5c63`,
+        background_color: `#2c323a`,
+        theme_color: `#1ad6bd`,
         display: `minimal-ui`,
-        icon: `src/images/wave-emoji.png`,
+        icon: `src/images/favicon.png`,
       },
     },
     {
@@ -42,8 +42,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-115396792-1",
-        head: false
+        trackingId: 'UA-115396792-1',
+        head: false,
       },
     },
   ],

@@ -10,8 +10,7 @@ const Section = styled.section`
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  background: ${({ side }) =>
-    side === 'right' ? '#171717' : 'linear-gradient(#fd5c63, #fd5c70)'};
+  background: ${({ side }) => (side === 'right' ? '#2c323a' : '#1ad6bd')};
   text-align: ${({ side }) => (side === 'right' ? 'left' : 'center')};
   @media only screen and (max-width: 1024px) {
     height: 100%;

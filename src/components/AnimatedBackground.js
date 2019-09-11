@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-import topography from '../images/topography';
+import pattern from '../images/pattern';
 
 const slide = keyframes`
   from { transform: translateX(0) translateY(0); }
@@ -18,7 +18,6 @@ export default styled.div`
     width: 400%;
     height: 400%;
     content: '';
-    background-color: #171717;
-    background-image: url("${topography}");
+    background-image: url("${pattern}");
   }
 `;

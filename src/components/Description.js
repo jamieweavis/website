@@ -6,7 +6,6 @@ export default styled.p`
   padding: 0 100px;
   z-index: 1;
   letter-spacing: -0.3px;
-  color: #fefefe;
 
   @media only screen and (max-width: 512px) {
     font-size: 40px;
@@ -14,18 +13,18 @@ export default styled.p`
   }
 
   a {
-    color: #fefefe;
+    color: #fff;
     position: relative;
     text-decoration: none;
     transition: color 0.2s ease;
     white-space: nowrap;
     &:hover {
-      color: #fd5c63;
+      color: #00d1b2;
     }
     &:after {
       content: ' ';
       height: 4px;
-      background: #fd5c63;
+      background: #00d1b2;
       position: absolute;
       border-radius: 2px;
       left: -4px;

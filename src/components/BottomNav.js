@@ -12,9 +12,9 @@ const StyledList = styled.ul`
 
   a {
     font-family: Lato;
-    margin: 0 20px;
-    color: #fefefe;
-    font-size: 24px;
+    margin: 0 15px;
+    color: #fff;
+    font-size: ${({ side }) => (side === 'right' ? '24px' : '38px')};
     letter-spacing: -0.3px;
     text-decoration: none;
     transition: color 0.2s ease;
@@ -25,7 +25,7 @@ const StyledList = styled.ul`
     }
 
     &:hover {
-      color: ${({ side }) => (side === 'right' ? '#fd5c63' : '#171717')};
+      color: ${({ side }) => (side === 'right' ? '#00d1b2' : '#373f49')};
     }
   }
 `;
