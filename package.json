@@ -62,7 +62,6 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "lint": "eslint .",
-    "now-build": "npm run build",
     "serve": "gatsby serve",
     "start": "npm run develop"
   }
