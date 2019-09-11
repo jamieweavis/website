@@ -10,7 +10,7 @@ const Section = styled.section`
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  background: ${({ side }) => (side === 'right' ? '#2c323a' : '#1ad6bd')};
+  background: ${({ side }) => (side === 'right' ? '#2c323a' : '#00d1c3')};
   text-align: ${({ side }) => (side === 'right' ? 'left' : 'center')};
   @media only screen and (max-width: 1024px) {
     height: 100%;
