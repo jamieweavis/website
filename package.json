@@ -7,22 +7,22 @@
     "url": "https://github.com/jamieweavis/website/issues"
   },
   "dependencies": {
-    "gatsby-plugin-google-analytics": "^2.1.17",
+    "gatsby-plugin-google-analytics": "^2.1.19",
     "gatsby": "^2.15.20",
     "gatsby-plugin-manifest": "^2.2.18",
-    "gatsby-plugin-offline": "^3.0.8",
+    "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-sharp": "^2.2.25",
-    "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-styled-components": "^3.1.8",
+    "gatsby-plugin-react-helmet": "^3.1.10",
     "gatsby-source-filesystem": "^2.1.25",
-    "gatsby-transformer-sharp": "^2.2.16",
+    "gatsby-transformer-sharp": "^2.2.19",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-helmet": "^5.2.0",
     "react-icons": "^3.7.0",
-    "styled-components": "^4.2.0"
+    "styled-components": "^4.4.0"
   },
   "devDependencies": {
     "eslint": "^5.15.3",
@@ -31,7 +31,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.5",
-    "lint-staged": "^9.2.5",
+    "lint-staged": "^9.4.1",
     "prettier": "^1.16.4"
   },
   "homepage": "https://jamieweavis.dev",
