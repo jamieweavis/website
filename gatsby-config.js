@@ -39,11 +39,17 @@ module.exports = {
         ],
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: 'UA-115396792-1',
+    //     head: false,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        trackingId: 'UA-115396792-1',
-        head: false,
+        id: 'GTM-MRZ9CZF',
       },
     },
   ],
