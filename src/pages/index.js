@@ -42,6 +42,7 @@ const IndexPage = () => (
         <Subtitle>Full Stack JavaScript Developer</Subtitle>
         <BottomNav side="left">
           <a
+            id="twitter-button"
             target="_blank"
             rel="noopener noreferrer"
             href="https://twitter.com/jamieweavis"
@@ -49,6 +50,7 @@ const IndexPage = () => (
             <FaTwitter />
           </a>
           <a
+            id="github-button"
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/jamieweavis"
@@ -56,6 +58,7 @@ const IndexPage = () => (
             <FaGithub />
           </a>
           <a
+            id="twitter-linkedin"
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/jamieweavis/"
