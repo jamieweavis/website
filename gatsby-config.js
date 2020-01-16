@@ -3,10 +3,14 @@ module.exports = {
     title: `Jamie Weavis | Full Stack JavaScript Developer | United Kingdom`,
     description: `Full Stack JavaScript Developer from The United Kingdom`,
     author: `@jamieweavis`,
+    siteUrl: `https://www.jamieweavis.dev`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,8 +18,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,6 +41,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-MRZ9CZF',
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-google-analytics`,
     //   options: {
@@ -46,11 +54,5 @@ module.exports = {
     //     head: false,
     //   },
     // },
-    {
-      resolve: 'gatsby-plugin-google-tagmanager',
-      options: {
-        id: 'GTM-MRZ9CZF',
-      },
-    },
   ],
 };
