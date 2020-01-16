@@ -14,6 +14,7 @@
     "gatsby-plugin-offline": "^3.0.11",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.2.25",
     "gatsby-plugin-sitemap": "^2.2.26",
     "gatsby-plugin-styled-components": "^3.1.8",
@@ -36,7 +37,7 @@
     "lint-staged": "^9.4.1",
     "prettier": "^1.16.4"
   },
-  "homepage": "https://jamieweavis.dev",
+  "homepage": "https://www.jamieweavis.dev",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
