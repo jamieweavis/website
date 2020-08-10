@@ -25,7 +25,7 @@ const StyledList = styled.ul`
     }
 
     &:hover {
-      color: ${({ side }) => (side === 'right' ? '#ed872d' : '#373f49')};
+      color: ${({ side }) => (side === 'right' ? '#ef913f' : '#373f49')};
     }
   }
 `;

@@ -19,12 +19,12 @@ export default styled.p`
     transition: color 0.2s ease;
     white-space: nowrap;
     &:hover {
-      color: #ed872d;
+      color: #ef913f;
     }
     &:after {
       content: ' ';
       height: 4px;
-      background: #ed872d;
+      background: #ef913f;
       position: absolute;
       border-radius: 2px;
       left: -4px;
