@@ -38,11 +38,6 @@
     "prettier": "^2.0.5"
   },
   "homepage": "https://www.jamieweavis.dev",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "keywords": [
     "minimalist",
     "gatsby",
@@ -50,13 +45,6 @@
     "website"
   ],
   "license": "MIT",
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "eslint",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/jamieweavis/website"
