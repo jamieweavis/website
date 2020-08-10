@@ -13,6 +13,7 @@ import BottomNav from '../components/BottomNav';
 
 const GlobalStyle = createGlobalStyle`
   html, body, div[role="group"][tabindex], #___gatsby, #gatsby-focus-wrapper {
+    background: #1b1f24;
     height: 100%;
     margin: 0;
     padding: 0;
