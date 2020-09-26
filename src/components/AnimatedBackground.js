@@ -18,6 +18,6 @@ export default styled.div`
     width: 400%;
     height: 400%;
     content: '';
-    background-image: url("${pattern}");
+    background-image: url('${pattern}');
   }
 `;
