@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Jamie Weavis | Full Stack JavaScript Developer | United Kingdom`,
-    description: `Full Stack JavaScript Developer from The United Kingdom`,
+    title: `Full Stack JavaScript Developer Based in the UK | Jamie Weavis`,
+    description: `I'm a Full Stack JavaScript Developer currently utilising modern JavaScript tools in the cloud including TypeScript, React, GraphQL, Apollo, Jest and more.`,
     author: `@jamieweavis`,
     siteUrl: `https://www.jamieweavis.dev`,
   },
