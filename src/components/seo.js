@@ -1,17 +1,11 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-const SEO = ({ description, lang, meta, keywords }) => {
-  const { site } = useStaticQuery(
+const SEO = () => {
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -25,72 +19,40 @@ const SEO = ({ description, lang, meta, keywords }) => {
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  const { title, description, author } = siteMetadata;
+  const lang = 'en';
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={site.siteMetadata.title}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: site.siteMetadata.title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: site.siteMetadata.title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : [],
-        )
-        .concat(meta)}
-    />
+    <Helmet>
+      {lang && <html lang={lang} />}
+      {lang && <meta property="og:locale" content={lang} />}
+      {title && <meta property="og:title" content={title} />}
+      {title && <meta name="twitter:title" content={title} />}
+      {description && <meta name="description" content={description} />}
+      {description && <meta property="og:description" content={description} />}
+      {description && <meta name="twitter:description" content={description} />}
+      {author && <meta name="twitter:creator" content={`@${author}`} />}
+      <script type="application/ld+json">
+        {JSON.stringify({
+          '@context': 'https://schema.org/',
+          '@type': 'Person',
+          name: 'Jamie Weavis',
+          url: 'https://www.jamieweavis.dev/',
+          image: 'https://avatars3.githubusercontent.com/u/8133259?s=460&v=4',
+          sameAs: [
+            'https://twitter.com/jamieweavis',
+            'https://www.linkedin.com/in/jamieweavis/',
+            'https://github.com/jamieweavis',
+          ],
+          jobTitle: 'Full Stack JavaScript Developer',
+          worksFor: {
+            '@type': 'Organization',
+            name: 'ParkIT',
+          },
+        })}
+      </script>
+    </Helmet>
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  keywords: [],
-};
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.array,
-  keywords: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default SEO;
