@@ -23,7 +23,7 @@ const SEO = () => {
   const lang = 'en';
 
   return (
-    <Helmet>
+    <Helmet title={title}>
       {lang && <html lang={lang} />}
       {lang && <meta property="og:locale" content={lang} />}
       {title && <meta property="og:title" content={title} />}
